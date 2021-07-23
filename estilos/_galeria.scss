@@ -1,0 +1,135 @@
+// GALERIA ------------------------------------------------------------------------------------------------- 
+
+.galeria {
+  background-image: linear-gradient(to bottom, $colorPrincipal, $colorSecundario 90%);
+  font-family: $tipografiaPrincipal;
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    color: $colorBlanco;
+    font-family: $tipografiaTitulos;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    font-weight: normal;
+  }
+}
+
+.contenedorGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  padding: 20px;
+  padding-bottom: 60px;
+  grid-gap: 10px;
+
+
+  h2 {
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    color: $colorBlanco;
+    background: linear-gradient(rgba($colorNegroPuro, 0), rgba($colorNegroPuro, 0.5));
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+  }
+
+  .imgGaleria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.itemGaleria {
+  position: relative;
+
+  h2 {
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+  }
+
+  &:hover h2 {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in;
+  }
+
+  &:nth-child(4) {
+    grid-column-start: span 2;
+  }
+
+  &:nth-child(5) {
+    grid-row-start: span 2;
+  }
+
+  &:nth-child(9) {
+    grid-column-start: span 2;
+  }
+}
+
+/* TAMANO TABLET---------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .contenedorGaleria {
+    grid-template-columns: repeat(4, 1fr);
+
+    h2 {
+      font-size: 14px;
+    }
+
+    .itemGaleria:nth-child(3) {
+      grid-column-start: span 2;
+    }
+
+    .itemGaleria:nth-child(4) {
+      grid-column-start: span 3;
+    }
+
+    .itemGaleria:nth-child(5) {
+      grid-row-start: span 3;
+    }
+
+    .itemGaleria:nth-child(9) {
+      grid-column-start: span 3;
+    }
+  }
+}
+
+/* TAMANO desktop-------------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+  .contenedorGaleria {
+    grid-template-columns: repeat(5, 1fr);
+    width: 95%;
+    margin: auto;
+
+    h2 {
+      font-size: 16px;
+    }
+
+    .itemGaleria:nth-child(1) {
+      grid-column-start: span 2;
+      grid-row-start: span 2;
+    }
+
+    .itemGaleria:nth-child(4) {
+      grid-column-start: span 3;
+      grid-row-start: span 3;
+    }
+  }
+}
+
+// TAMANO CELULAR
+@media (max-width: 552px) {
+  .contenedorGaleria {
+    display: block;
+  }
+
+  .itemGaleria{
+      margin-bottom: 25px;
+  }
+}

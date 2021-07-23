@@ -1,0 +1,22 @@
+// ESTILOS GENERALES ------------------------------------------------------------------------------------------------------
+
+// Variables
+// tipografias
+$tituloBanner: "Dancing Script", cursive;
+$tipografiaPrincipal: "Montserrat", sans-serif;
+$tipografiaTitulos: "Abril Fatface", cursive;
+
+// colores
+$colorPrincipal: #173954;
+$colorSecundario: #7ba9cf;
+$colorNegro: rgb(15, 15, 15);
+$colorNegroPuro: rgb(0, 0, 0);
+$colorBlanco: white;
+$colorBlancoOp: rgba(255, 255, 255, 0.548);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $tipografiaPrincipal;
+}

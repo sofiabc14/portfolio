@@ -1,0 +1,75 @@
+// FOOTER -------------------------------------------------------------------------------------------------
+
+footer {
+  background: $colorNegro;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: $colorBlanco;
+
+  .footerContenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+      font-size: 20px;
+      font-weight: bolder;
+      line-height: 45px;
+    }
+
+    p {
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 25px;
+      font-size: 15px;
+    }
+
+    .redes {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 13px 0 30px 0;
+
+      li {
+        margin: 0 10px;
+
+        a {
+          text-decoration: none;
+          color: $colorBlanco;
+
+          i {
+            font-size: 19px;
+            transition: color 0.4s ease;
+
+            &:hover {
+              color: $colorSecundario;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background: $colorNegroPuro;
+    text-align: center;
+    padding: 17px 0;
+
+    p {
+      font-size: 13px;
+      font-style: oblique;
+      letter-spacing: 1px;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $colorSecundario;
+    }
+  }
+}

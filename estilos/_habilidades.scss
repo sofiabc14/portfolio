@@ -1,0 +1,139 @@
+// HABILIDADES -------------------------------------------------------------------------------------------------
+
+.misHabilidades {
+  background-image: url(media/fondo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    color: $colorBlanco;
+    font-family: $tipografiaTitulos;
+    padding-bottom: 40px;
+    font-weight: normal;
+    padding-top:15px;
+  }
+
+  #porcentajes {
+    background-color: rgba($colorPrincipal, 0.7);
+    border-radius: 50px;
+    padding: 0 60px 60px 60px;
+    margin: 100px;
+    margin-top: 5px;
+
+    h2 {
+      padding-top: 30px;
+      font-family: $tipografiaPrincipal;
+      text-align: center;
+      color: $colorBlanco;
+      font-variant: small-caps;
+      font-weight: bolder;
+      letter-spacing: 1px;
+    }
+  }
+
+  #porcentajes {
+    p {
+      font-family: $tipografiaPrincipal;
+      color: $colorBlanco;
+      font-weight: bold;
+      text-align: end;
+      margin-bottom: 10px;
+    }
+
+    #photoshop {
+      height: 10px;
+      border-radius: 50px;
+      background-color: $colorBlanco;
+      animation-name: barrasPhotoshop;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      width: 90%;
+    }
+
+    #illustrator {
+      height: 10px;
+      border-radius: 50px;
+      background-color: $colorBlanco;
+      animation-name: barrasIllustrator;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      width: 100%;
+    }
+
+    #indesign {
+      height: 10px;
+      border-radius: 50px;
+      background-color: $colorBlanco;
+      animation-name: barrasIndesign;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      width: 95%;
+    }
+
+    #animate {
+      height: 10px;
+      border-radius: 50px;
+      background-color: $colorBlanco;
+      animation-name: barrasAnimate;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      width: 80%;
+    }
+  }
+  @keyframes barrasPhotoshop {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+
+  @keyframes barrasIllustrator {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes barrasIndesign {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 95%;
+    }
+  }
+
+  @keyframes barrasAnimate {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+
+  #barra {
+    height: 10px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.247);
+    width: 100%;
+  }
+}

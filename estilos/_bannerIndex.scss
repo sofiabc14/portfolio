@@ -1,0 +1,133 @@
+// BANNER INDEX -------------------------------------------------------------------------------------------------
+
+.uno {
+  background-image: url(media/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 180px;
+  font-family: $tipografiaPrincipal;
+
+  h1 {
+    color: $colorPrincipal;
+    font-family: $tipografiaTitulos;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 5rem;
+  }
+
+  h2 {
+    color: $colorPrincipal;
+    font-family: $tipografiaPrincipal;
+    font-style: italic;
+    font-size: 1.8rem;
+  }
+
+  p {
+    color: $colorPrincipal;
+    font-size: 16px;
+    font-family: $tipografiaPrincipal;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  // BOTON SOBRE MI EN INDEX
+
+  .botonIndex {
+    .btnIndex {
+      width: 150px;
+      height: 50px;
+      border: none;
+      color: $colorBlanco;
+      background: $colorPrincipal;
+      border-radius: 5px;
+      box-shadow: inset 0 0 0 0 $colorBlanco;
+      transition: ease-in-out 0.5s;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 3px;
+      outline: none;
+
+      &:hover {
+        color: $colorPrincipal;
+        box-shadow: inset 150px 0 0 0 $colorBlanco;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// BANNER CON BOTON A CONTACTO EN INDEX
+
+.banner {
+  background-image: url(media/imgestudios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 200px;
+
+  &__contenido {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  &__parrafo {
+    font-family: $tipografiaPrincipal;
+    font-weight: bold;
+    color: $colorBlanco;
+    text-align: center;
+    font-size: 1.6rem;
+    text-shadow: $colorNegro 0.1em 0.1em 0.2em;
+  }
+
+  .botonBanner {
+    padding-top: 25px;
+    .btnBanner {
+      box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
+      width: 150px;
+      height: 50px;
+      border: none;
+      color: $colorBlanco;
+      background: $colorPrincipal;
+      border-radius: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 3px;
+      transition: ease-in-out 0.5s;
+      outline: none;
+      position: relative;
+      z-index: 1;
+
+      &:hover {
+        color: $colorPrincipal;
+        cursor: pointer;
+
+        &:hover:before {
+          transition: 0.5s all ease;
+          left: 0;
+          right: 0;
+          opacity: 1;
+          z-index: -1;
+        }
+      }
+      &:before {
+        content: "";
+        border-radius: 5px;
+        background-color: $colorBlanco;
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0%;
+        opacity: 0;
+      }
+    }
+  }
+}
