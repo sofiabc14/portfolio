@@ -829,6 +829,26 @@ footer .copyright span {
   padding-bottom: 30px;
 }
 
+@media (max-width: 940px) {
+  .estudios {
+    display: block;
+    height: 100%;
+  }
+  h1 {
+    padding-left: 0;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .contenedorEstudios {
+    width: 100%;
+    display: block;
+    padding: 0px;
+  }
+  .contenedorEstudios .cajas {
+    display: block;
+  }
+}
+
 .galeria {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#173954), color-stop(90%, #7ba9cf));
   background-image: linear-gradient(to bottom, #173954, #7ba9cf 90%);
@@ -1150,5 +1170,11 @@ footer .copyright span {
   right: 50%;
   bottom: 0%;
   opacity: 0;
+}
+
+@media (max-width: 940px) {
+  .contenedorForm {
+    padding-top: 100px;
+  }
 }
 /*# sourceMappingURL=principal.css.map */
