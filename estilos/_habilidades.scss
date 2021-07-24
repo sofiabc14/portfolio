@@ -16,7 +16,7 @@
     font-family: $tipografiaTitulos;
     padding-bottom: 40px;
     font-weight: normal;
-    padding-top:15px;
+    padding-top: 15px;
   }
 
   #porcentajes {
@@ -135,5 +135,23 @@
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.247);
     width: 100%;
+  }
+}
+
+@media (max-width: 1125px) {
+  .misHabilidades {
+    h1 {
+      padding-top: 100px;
+    }
+    #porcentajes {
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
   }
 }

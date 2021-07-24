@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 510px;
+  height: 550px;
 
   h1 {
     font-family: $tipografiaTitulos;
@@ -93,25 +93,20 @@
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1125px) {
   .estudios {
-    display: block;
+    flex-direction: column;
     height: 100%;
+    
+    h1 {
+      padding-left: 0;
+      padding-top: 20px;
+    }
   }
-
-  h1 {
-    padding-left: 0;
-    text-align: center;
-    padding-top: 40px;
-  }
-
   .contenedorEstudios {
-    width: 100%;
-    display: block;
-    padding: 0px;
-
+    flex-direction: column;
     .cajas {
-      display: block;
+      flex-direction: column;
     }
   }
 }

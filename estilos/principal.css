@@ -714,6 +714,20 @@ footer .copyright span {
   width: 100%;
 }
 
+@media (max-width: 1125px) {
+  .misHabilidades h1 {
+    padding-top: 100px;
+  }
+  .misHabilidades #porcentajes h2 {
+    font-size: 20px;
+  }
+  .misHabilidades #porcentajes p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
 .estudios {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#173954), color-stop(90%, #7ba9cf));
   background-image: linear-gradient(to bottom, #173954, #7ba9cf 90%);
@@ -726,7 +740,7 @@ footer .copyright span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 510px;
+  height: 550px;
 }
 
 .estudios h1 {
@@ -829,23 +843,29 @@ footer .copyright span {
   padding-bottom: 30px;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1125px) {
   .estudios {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
   }
-  h1 {
+  .estudios h1 {
     padding-left: 0;
-    text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   .contenedorEstudios {
-    width: 100%;
-    display: block;
-    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contenedorEstudios .cajas {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
