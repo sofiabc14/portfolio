@@ -16,17 +16,16 @@
     font-size: 50px;
     font-weight: normal;
     color: $colorBlanco;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .contenedorEstudios {
     position: relative;
-    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
 
     .cajas {
       position: relative;
@@ -97,13 +96,15 @@
   .estudios {
     flex-direction: column;
     height: 100%;
-    
+
     h1 {
-      padding-left: 0;
+      padding: 0;
       padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
   .contenedorEstudios {
+    padding: 0;
     flex-direction: column;
     .cajas {
       flex-direction: column;
