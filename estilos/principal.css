@@ -732,6 +732,9 @@ footer .copyright span {
 }
 
 @media (max-width: 1125px) {
+  .misHabilidades {
+    background-position: bottom;
+  }
   .misHabilidades h1 {
     padding-top: 100px;
   }
