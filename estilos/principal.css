@@ -1,3 +1,13 @@
+::-moz-selection {
+  background: #173954;
+  color: white;
+}
+
+::selection {
+  background: #173954;
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -132,7 +142,7 @@ nav .logo img {
 
 .uno p {
   color: #173954;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -546,7 +556,7 @@ footer .copyright span {
   background-position: center center;
   background-attachment: fixed;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
 }
 
 .misHabilidades h1 {
@@ -560,11 +570,13 @@ footer .copyright span {
 }
 
 .misHabilidades #porcentajes {
-  background-color: rgba(23, 57, 84, 0.7);
-  border-radius: 50px;
+  background-color: rgba(23, 57, 84, 0.8);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
   padding: 0 60px 60px 60px;
-  margin: 100px;
-  margin-top: 5px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .misHabilidades #porcentajes h2 {
@@ -767,11 +779,11 @@ footer .copyright span {
 }
 
 @media (max-width: 1125px) {
-  .misHabilidades {
-    background-position: bottom;
-  }
   .misHabilidades h1 {
     padding-top: 100px;
+  }
+  .misHabilidades #porcentajes {
+    padding: 0 30px 30px 30px;
   }
   .misHabilidades #porcentajes h2 {
     font-size: 20px;

@@ -7,7 +7,7 @@
   background-position: center center;
   background-attachment: fixed;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
 
   h1 {
     font-size: 50px;
@@ -20,11 +20,12 @@
   }
 
   #porcentajes {
-    background-color: rgba($colorPrincipal, 0.7);
-    border-radius: 50px;
+    background-color: rgba($colorPrincipal, 0.8);
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     padding: 0 60px 60px 60px;
-    margin: 100px;
-    margin-top: 5px;
+    width: 60%;
+    margin: 0 auto;
 
     h2 {
       padding-top: 30px;
@@ -38,6 +39,7 @@
   }
 
   #porcentajes {
+
     p {
       font-family: $tipografiaPrincipal;
       color: $colorBlanco;
@@ -120,6 +122,7 @@
 
     }
   }
+
   @keyframes barrasPhotoshop {
     0% {
       width: 0px;
@@ -166,12 +169,13 @@
 
 @media (max-width: 1125px) {
   .misHabilidades {
-    background-position: bottom;
-    
     h1 {
       padding-top: 100px;
     }
     #porcentajes {
+
+      padding: 0 30px 30px 30px;
+
       h2 {
         font-size: 20px;
       }
