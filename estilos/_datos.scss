@@ -2,8 +2,8 @@
   background-color: $colorNegro;
   color: $colorBlanco;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .contenidoDatos {
@@ -16,17 +16,17 @@
   margin: 40px;
   width: 250px;
   height: 200px;
-  padding: 40px;
+  padding: 30px;
   transition: 0.5s ease-out;
 
   i {
-    font-size: 55px;
-    margin-bottom: 40px;
+    font-size: 45px;
+    margin-bottom: 30px;
   }
 
   h3 {
     font-weight: normal;
-    font-size: 17px;
+    font-size: 15px;
     margin: 0;
     padding: 0;
   }
@@ -62,4 +62,30 @@
   100% {
     transform: scale(1.1) rotate(0deg);
   }
+}
+
+@media (max-width: 580px){
+  .contenedorDatos{
+    padding-bottom: 0;
+  }
+  .contenidoDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .datos {
+    margin: 10px;
+    padding: 10px;
+    
+    i {
+      font-size: 35px;
+      margin-bottom: 16px;
+    }
+  
+    h3 {
+      font-size: 13px;
+    }
+  }
+  
 }

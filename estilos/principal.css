@@ -183,7 +183,7 @@ nav .logo img {
   font-weight: bold;
   color: white;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-shadow: #0f0f0f 0.1em 0.1em 0.2em;
 }
 
@@ -1258,8 +1258,8 @@ footer .copyright span {
   background-color: #0f0f0f;
   color: white;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .contenidoDatos {
@@ -1278,19 +1278,19 @@ footer .copyright span {
   margin: 40px;
   width: 250px;
   height: 200px;
-  padding: 40px;
+  padding: 30px;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
 .datos i {
-  font-size: 55px;
-  margin-bottom: 40px;
+  font-size: 45px;
+  margin-bottom: 30px;
 }
 
 .datos h3 {
   font-weight: normal;
-  font-size: 17px;
+  font-size: 15px;
   margin: 0;
   padding: 0;
 }
@@ -1359,6 +1359,38 @@ footer .copyright span {
   100% {
     -webkit-transform: scale(1.1) rotate(0deg);
             transform: scale(1.1) rotate(0deg);
+  }
+}
+
+@media (max-width: 580px) {
+  .contenedorDatos {
+    padding-bottom: 0;
+  }
+  .contenidoDatos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .datos {
+    margin: 10px;
+    padding: 10px;
+  }
+  .datos i {
+    font-size: 35px;
+    margin-bottom: 16px;
+  }
+  .datos h3 {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=principal.css.map */
