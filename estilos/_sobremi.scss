@@ -1,7 +1,5 @@
 // SOBRE MI -------------------------------------------------------------------------------------------------
 
-// MEDIAQUERIES DESKTOP
-
 @media (min-width: 1024px) {
   .contenedorSobreMi {
     display: grid;
@@ -19,7 +17,6 @@
 }
 
 .contenedorSobreMi {
-
   .izq {
     background-image: linear-gradient(
       to bottom,
@@ -101,12 +98,11 @@
 
   .der {
     background: $colorBlanco;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 80px;
+    padding: 80px 80px;
     text-align: center;
 
     h1 {
@@ -133,7 +129,7 @@
       font-size: 14px;
       text-transform: uppercase;
       border: 2px solid $colorPrincipal;
-      border-radius: 5px; 
+      border-radius: 5px;
       padding: 9px 0;
       width: 130px;
       font-weight: 600;
@@ -166,10 +162,34 @@
       }
     }
   }
-  
+
   .sobreMiContenido {
     p {
-      padding: 8px;
+      padding: 5px;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .contenedorSobreMi {
+    .izq {
+      padding-top: 120px;
+    }
+
+    .der {
+      padding: 50px 50px;
+
+      h1 {
+        font-size: 80px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 14px;
     }
   }
 }

@@ -437,7 +437,6 @@ footer .copyright span {
 
 .contenedorSobreMi .der {
   background: white;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,7 +450,7 @@ footer .copyright span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 80px;
+  padding: 80px 80px;
   text-align: center;
 }
 
@@ -518,7 +517,25 @@ footer .copyright span {
 }
 
 .contenedorSobreMi .sobreMiContenido p {
-  padding: 8px;
+  padding: 5px;
+}
+
+@media (max-width: 940px) {
+  .contenedorSobreMi .izq {
+    padding-top: 120px;
+  }
+  .contenedorSobreMi .der {
+    padding: 50px 50px;
+  }
+  .contenedorSobreMi .der h1 {
+    font-size: 80px;
+  }
+  .contenedorSobreMi .der h2 {
+    font-size: 20px;
+  }
+  .contenedorSobreMi p {
+    font-size: 14px;
+  }
 }
 
 .misHabilidades {
