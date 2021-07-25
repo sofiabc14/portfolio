@@ -93,6 +93,32 @@
       animation-delay: 0s;
       width: 80%;
     }
+    
+    #css{
+      height: 10px;
+      border-radius: 50px;
+      background-color: $colorBlanco;
+      animation-name: barrasAnimate;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      width: 70%;
+      
+    }
+    
+    #html{
+      height: 10px;
+      border-radius: 50px;
+      background-color: $colorBlanco;
+      animation-name: barrasAnimate;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      width: 60%;
+
+    }
   }
   @keyframes barrasPhotoshop {
     0% {
