@@ -1277,7 +1277,6 @@ footer .copyright span {
 .datos {
   margin: 40px;
   width: 250px;
-  height: 200px;
   padding: 30px;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
@@ -1382,8 +1381,11 @@ footer .copyright span {
             align-items: center;
   }
   .datos {
-    margin: 10px;
-    padding: 10px;
+    padding: 20px;
+  }
+  .datos:first-child {
+    padding-top: 0;
+    margin-top: 0;
   }
   .datos i {
     font-size: 35px;
