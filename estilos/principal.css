@@ -783,6 +783,7 @@ footer .copyright span {
     padding-top: 100px;
   }
   .misHabilidades #porcentajes {
+    width: 80%;
     padding: 0 30px 30px 30px;
   }
   .misHabilidades #porcentajes h2 {
