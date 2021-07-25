@@ -16,19 +16,20 @@
     font-family: $tipografiaTitulos;
     font-weight: normal;
     letter-spacing: 1px;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   h2 {
     color: $colorPrincipal;
     font-family: $tipografiaPrincipal;
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   p {
     color: $colorPrincipal;
-    font-size: 16px;
+    font-size: 15px;
+    text-align: center;
     font-family: $tipografiaPrincipal;
     font-weight: bold;
     padding: 20px;
