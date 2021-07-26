@@ -1532,6 +1532,16 @@ footer .copyright span {
           box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+  -webkit-animation-name: salto;
+          animation-name: salto;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .flecha .flechaArriba:hover {
@@ -1546,6 +1556,36 @@ footer .copyright span {
     width: 45px;
     height: 45px;
     font-size: 20px;
+  }
+}
+
+@-webkit-keyframes salto {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+@keyframes salto {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
 }
 /*# sourceMappingURL=principal.css.map */
