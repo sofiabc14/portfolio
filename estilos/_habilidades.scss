@@ -99,7 +99,7 @@
       height: 10px;
       border-radius: 50px;
       background-color: $colorBlanco;
-      animation-name: barrasAnimate;
+      animation-name: barrasCss;
       animation-iteration-count: 1;
       animation-timing-function: ease-out;
       animation-duration: 2s;
@@ -111,7 +111,7 @@
       height: 10px;
       border-radius: 50px;
       background-color: $colorBlanco;
-      animation-name: barrasAnimate;
+      animation-name: barrasHtml;
       animation-iteration-count: 1;
       animation-timing-function: ease-out;
       animation-duration: 2s;
@@ -153,6 +153,22 @@
     }
     100% {
       width: 80%;
+    }
+  }
+  @keyframes barrasHtml {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+  @keyframes barrasCss {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 70%;
     }
   }
 

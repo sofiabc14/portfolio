@@ -43,10 +43,12 @@ footer {
 
           i {
             font-size: 19px;
-            transition: color 0.4s ease;
+            transition: 0.4s ease;
 
             &:hover {
               color: $colorSecundario;
+              transform: scale(1.1) rotate(8deg);
+              transition: 0.4s ease;
             }
           }
         }

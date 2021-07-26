@@ -28,7 +28,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 10px 0 50px;
+  padding: 0 10px 0 25px;
 }
 
 nav ul {
@@ -61,7 +61,7 @@ nav ul li a:hover, nav ul li a.itemActivo {
 
 nav .botonMenu i {
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
   margin-right: 40px;
   display: none;
@@ -312,12 +312,16 @@ footer .footerContenido .redes li a {
 
 footer .footerContenido .redes li a i {
   font-size: 19px;
-  -webkit-transition: color 0.4s ease;
-  transition: color 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 footer .footerContenido .redes li a i:hover {
   color: #7ba9cf;
+  -webkit-transform: scale(1.1) rotate(8deg);
+          transform: scale(1.1) rotate(8deg);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 footer .copyright {
@@ -669,8 +673,8 @@ footer .copyright span {
   height: 10px;
   border-radius: 50px;
   background-color: white;
-  -webkit-animation-name: barrasAnimate;
-          animation-name: barrasAnimate;
+  -webkit-animation-name: barrasCss;
+          animation-name: barrasCss;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-out;
@@ -686,8 +690,8 @@ footer .copyright span {
   height: 10px;
   border-radius: 50px;
   background-color: white;
-  -webkit-animation-name: barrasAnimate;
-          animation-name: barrasAnimate;
+  -webkit-animation-name: barrasHtml;
+          animation-name: barrasHtml;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-out;
@@ -768,6 +772,42 @@ footer .copyright span {
   }
   100% {
     width: 80%;
+  }
+}
+
+@-webkit-keyframes barrasHtml {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes barrasHtml {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes barrasCss {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes barrasCss {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
   }
 }
 
@@ -950,7 +990,7 @@ footer .copyright span {
   color: white;
   font-family: "Abril Fatface", cursive;
   padding-bottom: 20px;
-  padding-top: 100px;
+  padding-top: 50px;
   font-weight: normal;
 }
 
@@ -1072,11 +1112,20 @@ footer .copyright span {
 }
 
 @media (max-width: 552px) {
+  .galeria h1 {
+    padding-top: 100px;
+  }
   .contenedorGaleria {
     display: block;
   }
   .itemGaleria {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 940px) {
+  .galeria h1 {
+    padding-top: 100px;
   }
 }
 
@@ -1147,7 +1196,7 @@ footer .copyright span {
 .contenedorForm h2 {
   position: relative;
   padding: 0 0 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contenedorForm h2:after {

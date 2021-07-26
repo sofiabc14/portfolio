@@ -10,7 +10,7 @@
     color: $colorBlanco;
     font-family: $tipografiaTitulos;
     padding-bottom: 20px;
-    padding-top: 100px;
+    padding-top: 50px;
     font-weight: normal;
   }
 }
@@ -125,11 +125,26 @@
 
 // TAMANO CELULAR
 @media (max-width: 552px) {
+
+  .galeria{
+    h1{
+      padding-top: 100px;
+    }
+  }
   .contenedorGaleria {
     display: block;
   }
 
   .itemGaleria{
       margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 940px) {
+
+  .galeria{
+    h1{
+      padding-top: 100px;
+    }
   }
 }
