@@ -1,0 +1,19 @@
+.flecha{
+    .flechaArriba{
+        position: fixed;
+        width: 59px;
+        height: 50px;
+        border-radius:100%;
+        background: $colorBlancoOp;
+        bottom: 40px;
+        right: 50px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        color: $colorPrincipal;
+    box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
+
+    }
+}

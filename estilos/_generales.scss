@@ -11,7 +11,7 @@ $colorSecundario: #7ba9cf;
 $colorNegro: rgb(15, 15, 15);
 $colorNegroPuro: rgb(0, 0, 0);
 $colorBlanco: white;
-$colorBlancoOp: rgba(255, 255, 255, 0.548);
+$colorBlancoOp: rgba(255, 255, 255, 0.767);
 
 // selection 
 ::selection {
@@ -25,4 +25,8 @@ $colorBlancoOp: rgba(255, 255, 255, 0.548);
   padding: 0;
   box-sizing: border-box;
   font-family: $tipografiaPrincipal;
+}
+
+html{
+  scroll-behavior: smooth;
 }

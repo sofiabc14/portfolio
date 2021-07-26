@@ -16,6 +16,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   height: 80px;
   background: #0f0f0f;
@@ -1502,5 +1506,29 @@ footer .copyright span {
   .datos h3 {
     font-size: 13px;
   }
+}
+
+.flecha .flechaArriba {
+  position: fixed;
+  width: 59px;
+  height: 50px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.767);
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 23px;
+  color: #173954;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
 }
 /*# sourceMappingURL=principal.css.map */
