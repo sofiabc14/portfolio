@@ -39,7 +39,6 @@
   }
 
   #porcentajes {
-
     p {
       font-family: $tipografiaPrincipal;
       color: $colorBlanco;
@@ -95,8 +94,8 @@
       animation-delay: 0s;
       width: 80%;
     }
-    
-    #css{
+
+    #css {
       height: 10px;
       border-radius: 50px;
       background-color: $colorBlanco;
@@ -106,10 +105,9 @@
       animation-duration: 2s;
       animation-delay: 0s;
       width: 70%;
-      
     }
-    
-    #html{
+
+    #html {
       height: 10px;
       border-radius: 50px;
       background-color: $colorBlanco;
@@ -119,7 +117,6 @@
       animation-duration: 2s;
       animation-delay: 0s;
       width: 60%;
-
     }
   }
 
@@ -174,7 +171,7 @@
     }
 
     #porcentajes {
-width: 80%;
+      width: 80%;
       padding: 0 30px 30px 30px;
 
       h2 {

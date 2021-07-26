@@ -1129,12 +1129,15 @@ footer .copyright span {
   background-color: white;
   -webkit-box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
           box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 7px;
 }
 
 .contenedorForm .contacto .izqForm {
   background: url("media/fondoForm.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .contenedorForm .contacto .derForm {
@@ -1264,6 +1267,9 @@ footer .copyright span {
 @media (max-width: 940px) {
   .contenedorForm {
     padding-top: 100px;
+  }
+  .contenedorForm .contForm {
+    width: 250px;
   }
 }
 
