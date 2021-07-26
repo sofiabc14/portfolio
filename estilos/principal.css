@@ -1510,12 +1510,12 @@ footer .copyright span {
 
 .flecha .flechaArriba {
   position: fixed;
-  width: 59px;
+  width: 50px;
   height: 50px;
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.767);
-  bottom: 40px;
-  right: 50px;
+  bottom: 30px;
+  right: 40px;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1530,5 +1530,22 @@ footer .copyright span {
   color: #173954;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.flecha .flechaArriba:hover {
+  background: #173854d2;
+  color: white;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 940px) {
+  .flecha .flechaArriba {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=principal.css.map */
