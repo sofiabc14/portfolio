@@ -47,6 +47,13 @@ nav {
 
   .logo img {
     width: 55px;
+    transition: 0.3s ease-out;
+
+
+    &:hover{
+      transform: rotate(180deg);
+      transition: 0.3s ease-out;
+    }
   }
 
   //   MEDIAQUERIES

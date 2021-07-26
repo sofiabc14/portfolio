@@ -73,6 +73,15 @@ nav #checkMenu {
 
 nav .logo img {
   width: 55px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+nav .logo img:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 @media (max-width: 940px) {
@@ -275,7 +284,7 @@ footer .footerContenido {
 }
 
 footer .footerContenido h3 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bolder;
   line-height: 45px;
 }
@@ -284,7 +293,7 @@ footer .footerContenido p {
   max-width: 500px;
   margin: 10px auto;
   line-height: 25px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 footer .footerContenido .redes {
@@ -311,7 +320,7 @@ footer .footerContenido .redes li a {
 }
 
 footer .footerContenido .redes li a i {
-  font-size: 19px;
+  font-size: 18px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -331,7 +340,7 @@ footer .copyright {
 }
 
 footer .copyright p {
-  font-size: 13px;
+  font-size: 12px;
   font-style: oblique;
   letter-spacing: 1px;
 }
@@ -442,8 +451,8 @@ footer .copyright span {
 }
 
 .contenedorSobreMi .sombra:hover .imgSobreMi {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .contenedorSobreMi .sombra:hover::after {
@@ -1263,6 +1272,38 @@ footer .copyright span {
 .contenedorForm textarea {
   min-height: 150px;
   resize: none;
+}
+
+.contenedorForm textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedorForm textarea:-ms-input-placeholder {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedorForm textarea::-ms-input-placeholder {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedorForm textarea::placeholder {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .contenedorForm .btnForm {
