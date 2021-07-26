@@ -16,19 +16,19 @@
     box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
     transition: 0.2s ease-in;
 
-    &:hover{
-        background: $colorPrincipalOp;
-        color: $colorBlanco;
-        transition: 0.2s ease-in;
+    &:hover {
+      background: $colorPrincipalOp;
+      color: $colorBlanco;
+      transition: 0.2s ease-in;
     }
   }
 
-//   MEDIAQUERIES 
-  @media (max-width: 940px){
-    .flechaArriba{
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+  //   MEDIAQUERIES
+  @media (max-width: 940px) {
+    .flechaArriba {
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
     }
   }
 }
