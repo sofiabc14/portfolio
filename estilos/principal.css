@@ -1538,8 +1538,8 @@ footer .copyright span {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.9s;
-          animation-duration: 0.9s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
