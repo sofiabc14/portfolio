@@ -28,6 +28,8 @@
       src="https://kit.fontawesome.com/b31f88fcb9.js"
       crossorigin="anonymous"
     ></script>
+    <!-- LIBRERIA AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- MENU -->
@@ -55,7 +57,7 @@
     <!-- SECTIONS -->
     <!-- BANNER 1  -->
     <section class="uno">
-      <h1>Mi Portfolio</h1>
+      <h1 data-aos="fade-down" data-aos-duration="1700">Mi Portfolio</h1>
       <h2>¡Hola! soy Sofía</h2>
       <p>
         Tengo 20 años, soy de Uruguay y me dedico a crear piezas de diseño
@@ -67,7 +69,7 @@
     </section>
 
     <section class="contenedorDatos">
-      <div class="contenidoDatos">
+      <div data-aos="fade-right" data-aos-duration="1700" class="contenidoDatos">
         <div class="datos">
           <i class="fas fa-pen-nib"></i>
           <h3>Diseño Gráfico</h3>
@@ -85,7 +87,7 @@
 
     <!-- BANNER 2 CON BOTON A CONTACTO  -->
     <section class="banner">
-      <div class="banner__contenido">
+      <div data-aos="fade-up" data-aos-duration="1700" class="banner__contenido">
         <p class="banner__parrafo">¿Necesitas contactarme?</p>
         <div class="botonBanner">
           <a a href="contacto.html"
@@ -97,7 +99,7 @@
 
     <!-- FLECHA -->
     <div class="flecha">
-    <a class="flechaArriba" href="#"><i class="fas fa-chevron-up"></i></a>
+      <a class="flechaArriba" href="#"><i class="fas fa-chevron-up"></i></a>
     </div>
 
     <!-- FOOTER  -->
@@ -134,5 +136,9 @@
         <p>Copyright © 2021 | Diseñado por <span>Sofía Cabrera</span></p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
