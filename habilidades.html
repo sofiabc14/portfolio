@@ -11,13 +11,14 @@
       name="keywords"
       content="PORTFOLIO, HABILIDADES, ESTUDIOS, CURSOS, IDIOMAS, PHOTOSHOP, ILLUSTRATOR, INDESIGN, ANIMATE"
     />
-    <!-- FAVICON  -->
+    <title>Habilidades y Estudios | Portfolio</title>
 
+    <!-- FAVICON  -->
     <link rel="icon" href="estilos/media/favicon (10).ico" />
 
-    <title>Habilidades y Estudios | Portfolio</title>
     <!--ENLACE CSS-->
     <link rel="stylesheet" href="estilos/principal.css" />
+
     <!-- TIPOGRAFIAS GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,11 +26,15 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Montserrat:wght@200;400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/b31f88fcb9.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- LIBRERIA AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- MENU -->
@@ -60,7 +65,7 @@
 
     <!--HABILIDADES-->
     <section class="misHabilidades">
-      <h1>Mis habilidades</h1>
+      <h1 data-aos="fade-in" data-aos-duration="1700">Mis habilidades</h1>
       <div id="porcentajes">
         <h2>photoshop</h2>
         <p>90%</p>
@@ -178,5 +183,11 @@
         <p>Copyright © 2021 | Diseñado por <span>Sofía Cabrera</span></p>
       </div>
     </footer>
+
+    <!-- SCRIPTS AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

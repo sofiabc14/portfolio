@@ -10,14 +10,15 @@
     <meta
       name="keywords"
       content="PORTFOLIO, MOCKUPS, DISEÑO, TRABAJOS, LOGOS"
-    />
+      />
+      <title>Trabajos | Portfolio</ti
+        tle>
     <!-- FAVICON  -->
-
     <link rel="icon" href="estilos/media/favicon (10).ico" />
 
-    <title>Trabajos | Portfolio</title>
     <!--ENLACE CSS-->
     <link rel="stylesheet" href="estilos/principal.css" />
+
     <!-- TIPOGRAFIAS GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,11 +26,15 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Montserrat:wght@200;400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/b31f88fcb9.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- LIBRERIA AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- MENU -->
@@ -58,7 +63,7 @@
 
     <!-- GALERIA CON GRID DE TRABAJOS -->
     <div class="galeria">
-      <h1>Mis Trabajos</h1>
+      <h1 data-aos="fade-in" data-aos-duration="1700">Mis Trabajos</h1>
       <div class="contenedorGaleria">
         <div class="itemGaleria">
           <img
@@ -183,5 +188,12 @@
         <p>Copyright © 2021 | Diseñado por <span>Sofía Cabrera</span></p>
       </div>
     </footer>
+
+    <!-- SCRIPTS AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   </body>
 </html>

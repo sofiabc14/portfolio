@@ -12,10 +12,13 @@
       content="PORTFOLIO, DISEÑO, DISEÑO GRÁFICO, DESARROLLO WEB"
     />
     <title>Inicio | Portfolio</title>
+
     <!--ENLACE CSS-->
     <link rel="stylesheet" href="estilos/principal.css" />
+
     <!-- FAVICON  -->
     <link rel="icon" href="estilos/media/favicon (10).ico" />
+
     <!-- TIPOGRAFIAS GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,11 +26,15 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Montserrat:wght@200;400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/b31f88fcb9.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- LIBRERIA AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- MENU -->
@@ -53,9 +60,10 @@
     </header>
 
     <!-- SECTIONS -->
+
     <!-- BANNER 1  -->
     <section class="uno">
-      <h1>Mi Portfolio</h1>
+      <h1 data-aos="fade-down" data-aos-duration="1500">Mi Portfolio</h1>
       <h2>¡Hola! soy Sofía</h2>
       <p>
         Tengo 20 años, soy de Uruguay y me dedico a crear piezas de diseño
@@ -66,8 +74,13 @@
       </div>
     </section>
 
+    <!-- DATOS  -->
     <section class="contenedorDatos">
-      <div class="contenidoDatos">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1700"
+        class="contenidoDatos"
+      >
         <div class="datos">
           <i class="fas fa-pen-nib"></i>
           <h3>Diseño Gráfico</h3>
@@ -85,7 +98,11 @@
 
     <!-- BANNER 2 CON BOTON A CONTACTO  -->
     <section class="banner">
-      <div class="banner__contenido">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="banner__contenido"
+      >
         <p class="banner__parrafo">¿Necesitas contactarme?</p>
         <div class="botonBanner">
           <a a href="contacto.html"
@@ -134,5 +151,11 @@
         <p>Copyright © 2021 | Diseñado por <span>Sofía Cabrera</span></p>
       </div>
     </footer>
+
+    <!-- SCRIPTS AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
