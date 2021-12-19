@@ -40,6 +40,11 @@
       box-shadow: 0 5px 20px rgba($colorNegroPuro, 0.5);
       transition: 0.3s ease-in-out;
 
+      a{
+      color: $colorPrincipal;
+      font-style: italic;
+      }
+
       &:hover {
         height: 320px;
 

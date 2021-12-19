@@ -4,159 +4,39 @@
   width: 100%;
 }
 
-.contenedorForm {
+.contenedorCont {
   font-family: $tipografiaPrincipal;
-  position: relative;
+  color: $colorBlanco;
+  text-align: center;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 100px;
+  background-image: linear-gradient(
+    to bottom,
+    $colorPrincipal,
+    $colorSecundario 70%
+  );
 
-  &:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: linear-gradient(
-      to top,
-      $colorPrincipal,
-      $colorSecundario 90%
-    );
-    z-index: -1;
-  }
-
-  .contacto {
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: $colorBlanco;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-    border-radius: 7px;
-
-    .izqForm {
-      background: url("media/fondoForm.jpg") no-repeat center;
-      background-size: cover;
-      height: 100%;
-      border-top-left-radius: 7px;
-      border-bottom-left-radius: 7px;
-    }
-
-    .derForm {
-      padding: 25px 40px;
-    }
+  .contactame {
+    padding: 100px;
   }
 
   h2 {
-    position: relative;
     padding: 0 0 10px;
-    margin-bottom: 20px;
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-      height: 4px;
-      width: 50px;
-      border-radius: 2px;
-      background-color: $colorPrincipal;
-    }
+    font-size: 28px;
   }
 
-  .contForm {
-    width: 100%;
-    border: 2px solid rgba($colorNegroPuro, 0.19);
-    outline: none;
-    background-color: rgba(230, 230, 230, 0.6);
-    padding: 8px 16px;
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: 0.3s;
-
-    &:hover {
-      background-color: rgba($colorNegroPuro, 0.1);
-    }
+  p {
+    font-size: 17px;
   }
 
-  input::placeholder {
-    font-size: 13px;
-    font-style: italic;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-family: $tipografiaPrincipal;
-  }
-
-  textarea {
-    min-height: 150px;
-    resize: none;
-
-    &::placeholder {
-      font-size: 14px;
-      font-style: italic;
-      font-weight: bold;
-      letter-spacing: 1px;
-      font-family: $tipografiaPrincipal;
-    }
-  }
-
-  .btnForm {
-    box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
-    width: 100%;
-    height: 50px;
-    border: none;
+  a {
     color: $colorBlanco;
-    background: $colorPrincipal;
-    border-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 3px;
-    transition: ease-in-out 0.5s;
-    outline: none;
-    position: relative;
-    z-index: 1;
-
-    &:hover {
-      cursor: pointer;
-
-      &:hover:before {
-        transition: 0.5s all ease;
-        left: 0;
-        right: 0;
-        opacity: 1;
-        z-index: -1;
-      }
-    }
-    &:before {
-      content: "";
-      border-radius: 5px;
-      background-color: $colorSecundario;
-      transition: 0.5s all ease;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      right: 50%;
-      bottom: 0%;
-      opacity: 0;
-    }
   }
 }
 
 // MEDIAQUERIES
 @media (max-width: 940px) {
-  .contenedorForm {
+  .contenedorCont {
     padding-top: 100px;
-
-    .contForm {
-      width: 250px;
-    }
   }
 }
